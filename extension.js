@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "basicBot";
+    var fork = "SkyeXIII";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -46,15 +46,15 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "Jimmy",
       language: "english",
       chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
-      startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
-      autowoot: true,
+      startupVolume: 40, // 0-100
+      startupEmoji: true, // true or false
+      autowoot: false,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
@@ -68,11 +68,11 @@
       maximumLocktime: 10,
       cycleGuard: true,
       maximumCycletime: 10,
-      voteSkip: false,
+      voteSkip: true,
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 8,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
@@ -91,7 +91,7 @@
       motdEnabled: false,
       motdInterval: 5,
       motd: "Temporary Message of the Day",
-      filterChat: true,
+      filterChat: false,
       etaRestriction: false,
       welcome: true,
       opLink: null,
@@ -112,6 +112,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/SkyeXIII/source/master/basicBot.js", extend);
 
 }).call(this);
